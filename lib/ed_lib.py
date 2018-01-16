@@ -26,7 +26,6 @@ def private_famous_user_validaton_and_save():
         for idx, row in enumerate(reader):
             human_name_tag = check_if_polish_name(row[1])
             row.append(human_name_tag)
-
             if human_name_tag:
                 famous_person_tag = check_if_famous_person_name(row[1])
                 row.append(famous_person_tag)
